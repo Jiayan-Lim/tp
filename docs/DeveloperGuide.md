@@ -330,8 +330,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1. User request to add a new patient to the system.
-2. The user enters patient details.
+1. User requests to add a new patient to the system.
+2. User enters patient details.
    1. The following are required information:
          - Patient name
          - Phone Number
@@ -340,48 +340,32 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
          - Date of Birth
          - Gender
          - IC
-   2. The following are non-required information:
+   2. The following are optional information:
          - Drug Allergy
          - Emergency contact
-3. The system creates the new user account.
-4. The system show the new created user in the patient list.
+3. System creates a new user account.
+4. System shows the new created user in the patient list.
 
     Use case ends.
 
 **Extensions**
 * 2a. If any of the required fields are not completed
 
-    * 2a1. the user is informed of this and show the correct format for the command
+    * 2a1. The user is informed of this and the system show the correct format and example of the command
 
- Use case resume at step 2.
+      Use case resume at step 2.
 
 * 2b. If the patient name is already in use
 
-    * 2b1. the user is informed that he or she must choose a different name
+    * 2b1. The user is informed that he or she must choose a different name
 
- Use case resume at step 2.
+      Use case resume at step 2.
 
-* 2c. If the input field is invalid, the user is informed of this, and the corresponding correct format for the command is displayed
+* 2c. If the input field is invalid
 
-    * 2c1. If the length of name exceed 50 character, the user is informed of this, and correct format for the command is displayed.
+    * 2c1. The user is informed of this and the corresponding valid naming criteria is displayed
 
-	  * 2c2. If the phone number is invalid, the user is informed of this, and correct format for the command is displayed.
-
-	  * 2c3. If the email is invalid, the user is informed of this, and correct format for the command is displayed.
-
-  	* 2c4. If the address is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c5. If the birth date is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c6. If the gender is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c7. If the IC is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c8. If the drug allergy is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c9. If the emergency contact is invalid, the user is informed of this, and correct format for the command is displayed.
-
- Use case resume at step 2.
+      Use case resume at step 2.
 
 **Use case: UC02 - Delete a patient**
 
@@ -389,10 +373,10 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1.  User <ins>list all patients(UC03).</ins>
-3.  User enters NRIC or index to delete a specific person in the list.
-4.  System deletes the person from the system.
-5.  System show the upddated patient list.
+1.  User <ins>lists all patients(UC03).</ins>
+2.  User requests to delete a specific person in the list.
+3.  System deletes the person from the system.
+4.  System shows the upddated patient list.
 
     Use case ends.
 
@@ -402,26 +386,26 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-* 2a. The given NRIC is invalid.
+* 2a. The given NRIC is invalid or not found.
 
-    * 2a1. System shows an error message.
+    * 2a1. The user is informed of this and the system shows an error message.
 
       Use case resumes at step 2.
 
 * 2b. The given index is invalid.
 
-    * 2b1. System shows an error message.
+    * 2b1. The user is informed of this and the system shows an error message.
 
       Use case resumes at step 2.
 
-**Use case:  UC03 - List all patients**
+**Use case: UC03 - List all patients**
 
 **Precondition: The GP receptionist is logged into the system**
 
 **MSS**
 
 1.  User requests to list all patients.
-2.  System shows a list of patients.
+2.  System shows list of patients.
 
     Use case ends.
 
@@ -432,8 +416,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to find patients.
-2.  User enter keyword that they want search for.
-2.  System return the list of patient that contain the keyword given by the user.
+2.  System shows the list of patient that the user search for.
 
     Use case ends.
 
@@ -445,8 +428,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1. User request to add a new drug to the system
-2. The user enters drug details
+1. User requests to add a new drug to the system
+2. User enters drug details
    1. The following are required information:
          - Trade name 
          - Active ingredients
@@ -454,39 +437,29 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
          - Purpose 
          - Side effect 
          - Storage count
-3. The system creates the new drug entry
-4. The system show the new created drug in the drug list
+3. System creates a new drug entry
+4. System shows the new created drug in the drug list
 
     Use case ends.
 
 **Extensions**
 * 2a. If any of the required fields are not completed
 
-    * 2a1. the user is informed of this and show the correct format for the command
+    * 2a1. The user is informed of this and show the correct format for the command
 
- Use case resume at step 2.
+      Use case resume at step 2.
 
 * 2b. If the trade name is already in use
 
-    * 2b1. the user is informed that he or she must choose a different name
+    * 2b1. The user is informed that he or she must choose a different name
 
- Use case resume at step 2.
+      Use case resume at step 2.
 
-* 2c. If the input field is invalid, the user is informed of this, and the corresponding correct format for the command is displayed
+* 2c. If the input field is invalid
 
-    * 2c1. If the length of tradeName exceed 50 character, the user is informed of this, and correct format for the command is displayed.
+    * 2c1. The user is informed of this and the corresponding valid criteria is displayed
 
-	  * 2c2. If the active ingredient is invalid, the user is informed of this, and correct format for the command is displayed.
-
-	  * 2c3. If the direction is invalid, the user is informed of this, and correct format for the command is displayed.
-
-  	* 2c4. If the purpose is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c5. If the side effect is invalid, the user is informed of this, and correct format for the command is displayed.
-
-    * 2c6. If the storage count is invalid, the user is informed of this, and correct format for the command is displayed.
-
- Use case resume at step 2.
+      Use case resume at step 2.
 
 **Use case:  UC06 - Delete a drug**
 
@@ -495,9 +468,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User <ins>lists all drugs(UC06).</ins>
-3.  User enters drug's trade name or index to delete a specific drug in the list.
-4.  System deletes the drug from the system.
-5.  System show the updated drug list.
+2.  User requests to delete a specific drug in the list.
+3.  System deletes the drug from the system.
+4.  System shows the updated drug list.
 
     Use case ends.
 
@@ -507,15 +480,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-* 2a. The given trade name is invalid.
+* 2a. The given trade name is not found.
 
-    * 2a1. CareFlow shows an error message.
+    * 2a1. The user is informed of this and the system shows an error message.
 
       Use case resumes at step 2.
 
 * 2b. The given index is invalid.
 
-    * 2b1. CareFlow shows an error message.
+    * 2b1. The user is informed of this and the system shows an error message.
 
       Use case resumes at step 2.
 
@@ -537,8 +510,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to find drugs.
-2.  User enter keyword that they want search for.
-2.  System return the list of drug that contain the keyword given by the user.
+2.  System shows the list of drugs that the user search for.
 
     Use case ends.
 
