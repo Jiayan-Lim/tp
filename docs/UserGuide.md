@@ -129,16 +129,15 @@ Examples:
 * `p delete -ic T3871918C`
 
 Command Input:
+
 ![](images/UIscreenshots/patientSS/pdeleteic.png)
 
 Patient to be Deleted:
 
 ![](images/UIscreenshots/patientSS/pIC.png)
 
-
-
-
 Command Result:
+
 ![](images/UIscreenshots/patientSS/pdeleteICres.png)
 
 [Back to top](#top)
@@ -155,6 +154,7 @@ Example:
 * `p delete -i 8`
 
 Command Input:
+
 ![](images/UIscreenshots/patientSS/pdelete.png)
 
 Patient to be Deleted:
@@ -162,6 +162,7 @@ Patient to be Deleted:
 ![](images/UIscreenshots/patientSS/8p.png)
 
 Command Result:
+
 ![](images/UIscreenshots/patientSS/pdeleteres.png)
 
 [Back to top](#top)
@@ -186,10 +187,8 @@ Patient to be Updated:
 
 ![](images/UIscreenshots/patientSS/pIC.png)
 
-
-
-
 Command Result:
+
 ![](images/UIscreenshots/patientSS/pupdateres.png)
 
 [Back to top](#top)
@@ -269,17 +268,15 @@ Examples:
 * `d delete -tn Panadol`
 
 Input Command:
+
 ![](images/UIscreenshots/drugSS/ddeletetn.png)
+
 Drug to be Deleted:
 
 ![](images/UIscreenshots/drugSS/dpanadol.png)
 
-
-
-
-
-
 Command Result:
+
 ![](images/UIscreenshots/drugSS/ddeletetnres.png)
 
 [Back to top](#top)
@@ -294,12 +291,15 @@ Examples:
 * This deletes the 4th drug entry in the most recently shown list
 
 Drug to be Deleted:
+
 ![](images/UIscreenshots/drugSS/d4.png)
 
 Command Input:
+
 ![](images/UIscreenshots/drugSS/ddeleteindex.png)
 
 Command Result:
+
 ![](images/UIscreenshots/drugSS/ddeletetnres.png)
 
 [Back to top](#top)
